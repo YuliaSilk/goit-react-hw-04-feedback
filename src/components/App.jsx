@@ -19,13 +19,6 @@ const positivePercentage = () => {
   return countTotalFeedback() > 0 ? Math.round((good / countTotalFeedback()) * 100) :0;
 };
 
-// countPositiveFeedbackPercentage = () => {
-//   const { good } = this.state;
-//   const total = this.countTotalFeedback();
-//   return total > 0 ? Math.round((good / total) * 100) :0;
-//  };
-
-
 const toLeaveFeedback = value => {
   if (value === 'good') {
    setGood(prevState => prevState + 1);
